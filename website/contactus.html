@@ -1,0 +1,256 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, iniitial-scale=1.0">
+        <link rel="shortcut icon" href="./33.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+    <style>
+        * {
+      margin: 0;
+      padding: 0;
+    }
+    .header{
+        min-height: 100vh;
+        width:100%;
+        background-image:linear-gradient(rgba(7, 13, 35, 0.7),rgba(12, 18, 42, 0.7)), url(18.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+        nav {
+        display:flex;
+        padding: 2% 6%;
+        justify-content:space-between;
+        align-items: center;
+        }
+
+        nav img{
+            width: 170px;
+           text-align: left;
+        }
+
+        .nav-links{
+           flex: 1;
+           text-align: right;
+        } 
+
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding:8px 12px;
+            position: relative;
+        }
+        
+        .nav-links ul li a{
+           color: floralwhite;
+           text-decoration: none;
+           font-size: 12px;
+        }
+
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f2584c;
+            display:block;
+            margin:auto;
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+        .text-box{
+            width: 90%;
+            color: #fff;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .text-box h1{
+            font-size: 62px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2in;
+            margin-top: 100px; 
+        }
+        .text-box p{
+            margin: 10px 0 50px;
+            font-size: 12 px;
+            color: #fff;
+        }
+        .h-btn{
+            display:inline-block;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background:transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .h-btn:hover{
+            border:1px solid #4e6072;
+            background:  #4e6072;
+            transition: 1s;
+        }
+
+        /*-------------- contact us page-----------*/
+
+        .sub-header{
+           height:60vh;
+           width: 100%;
+           background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(33.png);
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover; 
+           text-align: center;
+           color: #fff;
+        }
+        .map{
+            width: 90%;
+        }
+        .sub-header h1{
+            margin-top: 90px;
+            font-size: 55px;
+            display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+        .location{
+            width: 80%;
+            margin: auto;
+            padding: 80px 0;
+        }
+        .location iframe{
+            width: 100%;
+        }
+        p{
+            color:#5c5757;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 0;
+            text-align: center;
+            color: rgb(12, 108, 182);
+
+        }
+        
+        .row{
+            margin-top: 5%;
+           display: flex;
+            justify-content: space-between;
+        }
+        .contact-col{
+            flex-basis: 45%;
+            background: #fdfdfd;
+           border-radius: 2px;
+           margin-bottom: 5%;
+            padding:20px 12px;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+       
+        .contact-col h5{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+        font-size: 30px;
+       
+        color: rgb(11, 117, 199) ;
+       }
+      
+       .contact-col:hover{
+        box-shadow: 0 0 20px 0px rgba(189, 189, 189, 0.2);
+
+       }
+       .contact-col div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+       }
+       .contact-col h5 .fa{
+                font-size: 28px;
+                text-align: left;
+                margin: 10px;
+                margin-right: 30px;
+       }
+       .contact-col input, .contact-col textarea{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 17px;
+        outline: none;
+        border: 1px solid #ccc;
+       }
+      
+    </style>
+    <body>
+        <section class="sub-header">
+               <nav>
+                <a href="college.html"><img src="12.png"></a>
+                <div class="nav-links">
+                    <ul>
+                    <li><a href="college.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="scholarships.html">SCHOLARSHIPS</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                    </ul>
+                </div>
+               </nav>
+               
+                    <h1>Contact Us</h1>
+         </section>
+         <!-------------- contact us ------------->
+
+           <section class="location">
+            <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d220.79494380382567!2d85.32921800555285!3d27.
+            695075450779072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a35ae3bc27%3A0xe958e4fbbefbfc50!2sMadan%20Bhandari%20
+            Memorial%20College!5e0!3m2!1sen!2snp!4v1709300661400!5m2!1sen!2snp" width="600" height="450" style="border:0;"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+           </section>
+           <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                      <div>
+                        <span>
+                            <h5><i class="fa fa-home"></i> Address: Rudmatti Marg, Kathmandu 44600</h5>
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                            <h5>  <i class="fa fa-phone"></i> Phone Number:01-5172175</h5>
+                          
+                                  <p>Hours: 
+                                     Sunday:	6 AM–7 PM<br>
+                                    Monday:	6 AM–7 PM<br>
+                                    Tuesday:	6 AM–7 PM<br>
+                                    Wednesday:	6 AM–7 PM<br>
+                                     Thursday:	6 AM–7 PM<br>
+                                     Friday:	6 AM–7 PM<br>
+                                    Saturday:	Closed<br></p>
+                        </span>
+                      </div>
+                    <div>
+                    <span>
+                        <h5><i class="fa fa-envelope-o" ></i>Email:info@mbmc.edu.np</h5>
+                        <p>Email us your query</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="contact-col">
+                  <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter email address" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="h.btn red-btn" >Send Message</button>
+                  </form>
+               </div>
+            </div>
+           </section>
+    </body>
+</html>

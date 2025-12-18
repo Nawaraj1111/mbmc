@@ -1,0 +1,412 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, iniitial-scale=1.0">
+        <link rel="shortcut icon" href="images.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    </head> 
+    <style>
+        * {
+      margin: 0;
+      padding: 0;
+    }
+    .header{
+        min-height: 100vh;
+        width:100%;
+        background-image:linear-gradient(rgba(7, 13, 35, 0.7),rgba(12, 18, 42, 0.7)), url(18.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+        nav {
+        display:flex;
+        padding: 2% 6%;
+        justify-content:space-between;
+        align-items: center;
+        }
+
+        nav img{
+            width: 170px;
+           text-align: left;
+        }
+
+        .nav-links{
+           flex: 1;
+           text-align: right;
+        } 
+
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding:8px 12px;
+            position: relative;
+        }
+        
+        .nav-links ul li a{
+           color: floralwhite;
+           text-decoration: none;
+           font-size: 18px;
+        }
+
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f2584c;
+            display:block;
+            margin:auto;
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+        .text-box{
+            width: 90%;
+            color: #fff;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .text-box h1{
+            font-size: 62px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2in;
+            margin-top: 100px; 
+        }
+        .text-box p{
+            margin: 10px 0 50px;
+            font-size: 12 px;
+            color: #fff;
+        }
+        .h-btn{
+            display:inline-block;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background:transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .h-btn:hover{
+            border:1px solid #4e6072;
+            background:  #4e6072;
+            transition: 1s;
+        }
+
+        /*-------------- about us page-----------*/
+
+        .sub-header{
+           height:50vh;
+           width: 100%;
+           background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(25.png);
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover; 
+           text-align: center;
+           color: #fff;
+           
+        }
+        .sub-header h1{
+            margin-top: 90px;
+            font-size: 48px;
+        }
+       
+
+       h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+        font-size: 75px;
+       }
+      
+       .about-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.20);
+
+       }
+            
+        
+       p{
+            color:#5c5757;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+
+        }
+        .row{
+            margin-top: 5%;
+           display: flex;
+            justify-content: space-between;
+        }
+        .mission-col{
+            flex-basis: 50%;
+            background: #eff3f5 ;
+           border-radius: 2px;
+           margin-bottom: 5%;
+            padding:20px 12px;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+        .mission-col img{
+            width: 100%;
+        }
+
+       h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+        font-size: 75px;
+       }
+      
+       .mission-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.20);
+
+       }  
+        
+       p{
+            color:#5c5757;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+
+        }
+        .row{
+            margin-top: 5%;
+           display: flex;
+            justify-content: space-between;
+        }
+        .vision-col{
+            flex-basis: 50%;
+            background:#eff3f5;
+           border-radius: 2px;
+           margin-bottom: 5%;
+            padding:20px 12px;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+        .vision-col img{
+            width: 100%;
+        }
+
+       h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+        font-size: 75px;
+       }
+      
+       .vision-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.20);
+
+       }  
+       /*-------- course ---------*/
+
+       .course{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+           
+        }
+        h2{
+            font-size: 40px;
+            font-weight: 600;
+           
+        }
+        p{
+            color:#5c5757;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+            font-size: 22px;
+
+        }
+        .row{
+            margin-top: 5%;
+           display: flex;
+            justify-content: space-between;
+        }
+        .course-col{
+            flex-basis: 45%;
+            background: #fff3f3;
+           border-radius: 2px;
+           margin-bottom: 5%;
+            padding:20px 12px;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+
+       h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+        font-size: 40px;
+       }
+      
+       .course-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.20);
+
+       } /*-------------- about us page-----------*/
+
+.sub-course{
+   height:100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(images.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; 
+   text-align: center;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.sub-course h1{
+    margin-top: 40px;
+    font-size: 55px;
+    text-align: center;
+}
+p{
+    color:#5c5757;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+.row{
+    margin-top: 5%;
+   display: flex;
+    justify-content: space-between;
+}
+.about-col{
+    flex-basis: 50%;
+    background: #eff3f5;
+   border-radius: 2px;
+   margin-bottom: 5%;
+    padding:20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.about-col img{
+    width: 100%;
+}
+
+h3{
+text-align: center;
+font-weight: 600;
+margin: 10px 0;
+font-size: 50px;
+}
+
+.about-col:hover{
+box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.20);
+
+}
+.subject-col{
+    flex-basis: 30%;
+    background: #bcc5d0;
+   border-radius: 2px;
+   margin-top: 5%;
+   margin-bottom: 5%;
+    padding:20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+.subject-col h3{
+    color: darkblue;
+    font-size: 40px;
+}
+.subject-col:hover{
+box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.20);
+}
+        
+    </style>
+    <body>
+        <section class="sub-header">
+               <nav>
+                <a href="college.html"><img src="12.png"></a>
+                <div class="nav-links">
+                    <ul>
+                    <li><a href="college.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="scholarships.html">SCHOLARSHIPS</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                    </ul>
+                </div>
+               </nav>
+               
+                    <h1>COURSES</h1>
+         </section>
+         <!------------ courses ------------>
+         
+         <section class="course">
+            <h2>Courses We Offer </h2>
+            <p>BACHELOR'S PROGRAM COURSES<br>
+                LIBERAL ARTS,
+                MANAGEMENT,
+                SCIENCE AND TECHNOLOGY<br>
+                BSCCSIT,
+                BBM
+                MASTER'S PROGRAM COURSES<br>
+                LIBERAL ARTS
+                MA ENGLISH
+                </p>
+
+                <div class="row">
+                    <div class="course-col">
+                        <h3>Intermediate (+2) </h3>
+                        <p>The candidates interested to apply for the admission in Madan Bhandari Memorial College must have 
+                            certain requirements. The applicants applying for science faculty in +2 must have scored at least
+                             60% in SLC and the students with 50% of score in SLC can apply for other +2 level faculties. If 
+                             the requirements are reached the candidates can apply for further admission process and have to
+                              take entrance and oral test held by the institution. </p>
+                    </div><div class="course-col">
+                        <h3>Bachelors and Masters Level</h3>
+                        <p>The candidates willing to apply for the Bachelors and Masters level at Madan Bhandari Memorial
+                             College  must have all the required documents for the admission process. The candidates must
+                              submit all the required documents with completely filled application form for admission. The
+                               candidates then have to go through the entrance and oral tests and only the eligible students
+                                after both tests can get admission in the university.</p>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <section class="sub-course">
+            <h1></h1>
+            <div class="row">
+                <div class="subject-col">
+                    <h3>SCIENCE </h3>
+                    <p> A two-year program designed for students interested in the fundamentals of computer science and technology.
+                        Covers subjects like programming, database management, and basic networking, laying the groundwork for advanced studies in technology.
+                        Ideal for students aiming for a career in IT or software development.
+                        Focuses on scientific principles and methodologies across key subjects such as Physics, Chemistry, Biology, and Mathematics.
+                        Designed for students interested in pursuing careers in medicine, engineering, and other science-related fields.
+                        Emphasizes practical and theoretical knowledge, preparing students for higher education in scientific disciplines.</p>
+                </div><div class="subject-col">
+                    <h3>MANAGEMENT</h3>
+                    <p>A comprehensive course aimed at providing students with foundational knowledge in business management and related fields.
+                        Subjects include accounting, economics, business studies, and marketing.
+                        Prepares students for a career in business, entrepreneurship, or further studies in management.</p>
+                </div>
+                <div class="subject-col">
+                    <h3>HUMMANITIES</h3>
+                    <P>Humanities courses can include the study of history, philosophy and religion, modern and ancient languages and literature, 
+                        fine and performing arts, media and cultural studies, just to name a few. </P>
+                </div>
+            </div>
+            </div>
+        </section>
+    
+    </body>
+</html>

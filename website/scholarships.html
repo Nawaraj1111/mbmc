@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, iniitial-scale=1.0">
+        <link rel="shortcut icon" href="31.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+    <style>
+        * {
+      margin: 0;
+      padding: 0;
+    }
+    .header{
+        min-height: 100vh;
+        width:100%;
+        background-image:linear-gradient(rgba(7, 13, 35, 0.7),rgba(12, 18, 42, 0.7)), url(18.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+        nav {
+        display:flex;
+        padding: 2% 6%;
+        justify-content:space-between;
+        align-items: center;
+        }
+
+        nav img{
+            width: 170px;
+           text-align: left;
+        }
+
+        .nav-links{
+           flex: 1;
+           text-align: right;
+        } 
+
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding:8px 12px;
+            position: relative;
+        }
+        
+        .nav-links ul li a{
+           color: floralwhite;
+           text-decoration: none;
+           font-size: 12px;
+        }
+
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f2584c;
+            display:block;
+            margin:auto;
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+        .text-box{
+            width: 90%;
+            color: #fff;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .text-box h1{
+            font-size: 62px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2in;
+            margin-top: 100px; 
+        }
+        .text-box p{
+            margin: 10px 0 50px;
+            font-size: 12 px;
+            color: #fff;
+        }
+        .h-btn{
+            display:inline-block;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background:transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .h-btn:hover{
+            border:1px solid #4e6072;
+            background:  #4e6072;
+            transition: 1s;
+        }
+
+        /*-------------- about us page-----------*/
+
+        .sub-header{
+           height:60vh;
+           width: 100%;
+           background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(31.jpg);
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover; 
+           text-align: center;
+           color: #fff;
+           
+        }
+        .sub-header h1{
+            margin-top: 90px;
+            font-size: 48px;
+        }
+        /*----------- facilities----------*/
+        .scholarships{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+
+        }
+        .scholarships h1{
+            font-size: 40px;
+        }
+        
+        p{
+            color:#161515;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 35px;
+            padding: 10px;
+
+        }
+        .b{
+            font-size: 30px;
+        }
+        .row{
+            margin-top: 5%;
+           display: flex;
+            justify-content: space-between;
+        }
+        .scholarships-col{
+            flex-basis: 50%;
+            background:rgb(241, 246, 248) ;
+           border-radius: 2px;
+           margin-bottom: 5%;
+            padding:20px 12px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            
+        }
+        .scholarships-col img{
+            width: 100%;
+        }
+
+        .scholarship h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+        font-size: 40px;
+       }
+      
+       .scholarships-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.20);
+
+       }  
+      
+    </style>
+    <body>
+        <section class="sub-header">
+               <nav>
+                <a href="college.html"><img src="12.png"></a>
+                <div class="nav-links">
+                    <ul>
+                    <li><a href="college.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="scholarships.html">SCHOLARSHIPS</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                    </ul>
+                </div>
+               </nav>
+               
+                    <h1>SCHOLARSHIPS</h1>
+         </section>
+         <section class="scholarship">        
+            <div class="row">
+            <div class="scholarships-col">
+                <h3>SCHOLARSHIP INFORMATION</h3>
+                <p>MBM College provides various scholarship for deserving students:<br><br> <b> Scholarships and Awards:</b><br><br>
+
+Full scholarships in China for students applying for medical and engineering degrees.<br>
+Special scholarships for students from the families victimized by natural disasters.<br>
+Madan Bhandari Gold Medal (Boys).<br>
+Madan Bhandari Gold Medal (Girls).<br>
+Scholarships to merit students from marginalized, deprived and underprivileged sections of society.<br>
+Scholarships for 90% above or Grade A+ scorers and district toppers with distinction or Grade A.<br>
+Scholarships for term exam and entrance exam toppers.</p>
+            </div><div class="scholarships-col">
+                <img src="32.png">
+            </div>
+        </div>
+        </div>
+    </section> 
+    </body>
+</html>

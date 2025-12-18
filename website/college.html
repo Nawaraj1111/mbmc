@@ -1,0 +1,367 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, iniitial-scale=1.0">
+        <link rel="shortcut icon" href="13.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+    <style>
+        * {
+      margin: 0;
+      padding: 0;
+    }
+    .header{
+        min-height: 100vh;
+        width:100%;
+        background-image:linear-gradient(rgba(7, 13, 35, 0.7),rgba(12, 18, 42, 0.7)), url('24.jfif');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+        nav {
+        display:flex;
+        padding: 2% 6%;
+        justify-content:space-between;
+        align-items: center;
+        }
+
+        nav img{
+            width: 170px;
+           text-align: left;
+        }
+
+        .nav-links{
+           flex: 1;
+           text-align: right;
+        } 
+
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding:8px 12px;
+            position: relative;
+        }
+        
+        .nav-links ul li a{
+           color: floralwhite;
+           text-decoration: none;
+           font-size: 12px;
+        }
+
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f2584c;
+            display:block;
+            margin:auto;
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+        .text-box{
+            width: 90%;
+            color: #fff;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .text-box h1{
+            font-size: 62px;
+        }
+        .text-box p{
+            margin: 10px 0 50px;
+            font-size: 12 px;
+            color: #fff;
+        }
+        .h-btn{
+            display:inline-block;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: rgb(65, 77, 82);
+            position: relative;
+            cursor: pointer;
+            color: white;
+        }
+        .h-btn:hover{
+            border:1px solid transparent;
+            background:  gainsboro;
+            transition: 1s;
+        }
+        
+    
+        /*-------- course ---------*/
+
+        .Course{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+           
+        }
+        h2{
+            font-size: 36px;
+            font-weight: 600;
+           
+        }
+        p{
+            color:#5c5757;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+
+        }
+        .row{
+            margin-top: 5%;
+           display: flex;
+            justify-content: space-between;
+        }
+        .course-col{
+            flex-basis: 45%;
+            background: #fff3f3;
+           border-radius: 2px;
+           margin-bottom: 5%;
+            padding:20px 12px;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+
+       h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+       }
+      
+       .course-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.20);
+
+       }
+       @media (max-width: 700px) {
+        .row{
+            flex-direction: column;
+        }
+        
+       }
+       /*------------college-----------*/
+
+       .college{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+       }
+       .college-col{
+        flex-basis: 32%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+       }
+       .college-col img{
+        width: 100%;
+        display: block;
+       }
+       .layer{
+        background:transparent;
+        height: 100%;
+        width:100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+       }
+       .layer:hover{
+        background: rgba(115, 154, 195, 0.7) ;
+       }
+       .layer h3{
+        width: 100%;
+        font-weight: 500;
+        color: #fff;
+        font-size: 20px;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+       }
+        .layer:hover h3{
+            bottom: 49%;
+            opacity: 1;
+        }
+        /*-------------facilities------------*/
+
+        .facilities{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+
+        }
+        .facilities-col{
+            flex-basis: 31%;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            text-align: left;
+        }
+        .facilities-col img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .facilities-col p{
+            padding: 0;
+        }
+        .facilities-col h3{
+            margin-top: 16px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        /*---------------- Call to action ------------------*/
+
+        .cta {
+            margin: 100px auto;
+            width: 80%;
+           background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(21.jpg);
+           
+           background-position: center;
+           background-size: cover;
+           border-radius: 10px;
+           text-align: center;
+           padding:100px 0;
+        }
+        .cta h1{
+            color:#fff;
+            margin-bottom: 40px;
+            padding: 0;
+        }
+    
+    </style>
+    <body>
+        <section class="header">
+               <nav>
+                <a href="college.html"><img src="12.png"></a>
+                <div class="nav-links">
+                    <ul>
+                    <li><a href="college.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="scholarships.html">SCHOLARSHIPS</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                    </ul>
+                </div>
+               </nav>
+               <div class="text-box">
+                    <h1>Welcome to the Madan Bhandari Memorial College</h1>
+                    <P>
+                        Madan Bhandari Memorial College, a non-profit making community institution, was established in 2001 to impart quality education at an affordable cost.<br> The college offers a wide range of academic courses in XI, XII, BA, BBS, BBM, BCA, BScCSIT, and Master's Degree courses in Sociology, Journalism, and English.
+                    </P>
+                    <a href="./aboutus.html" class="h-btn">visit us to know more</a>
+               </div>
+            </section>
+                          
+             <!---------- course ----------->
+        <section class="Course">
+            <h2>Courses </h2>
+            <p>BACHELOR'S PROGRAM COURSES
+                LIBERAL ARTS
+                MANAGEMENT
+                SCIENCE AND TECHNOLOGY
+                BSCCSIT
+                BBM
+                MASTER'S PROGRAM COURSES
+                LIBERAL ARTS
+                MA ENGLISH
+                </p>
+
+                <div class="row">
+                    <div class="course-col">
+                        <h3>Intermediate (+2) </h3>
+                        <p>The candidates interested to apply for the admission in Madan Bhandari Memorial College must have 
+                            certain requirements. The applicants applying for science faculty in +2 must have scored at least
+                             60% in SLC and the students with 50% of score in SLC can apply for other +2 level faculties. If 
+                             the requirements are reached the candidates can apply for further admission process and have to
+                              take entrance and oral test held by the institution. </p>
+                    </div><div class="course-col">
+                        <h3>Bachelors and Masters Level</h3>
+                        <p>The candidates willing to apply for the Bachelors and Masters level at Madan Bhandari Memorial
+                             College  must have all the required documents for the admission process. The candidates must
+                              submit all the required documents with completely filled application form for admission. The
+                               candidates then have to go through the entrance and oral tests and only the eligible students
+                                after both tests can get admission in the university.</p>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <!---------- college --------->
+        
+        <section class="college">
+            <h1>Our MBM College</h1>
+            <p>Madan Bhandari Memorial College offers intermediate level in Science, Management, Humanities and
+                 Education, Bachelors programs in BBS, BA, B.Ed, BSc. CSIT and Masters program in English, Journalism
+                  and Mass Communication, Sociology and Anthropology.</p>
+                  <div class="row">
+                    <div class="college-col">
+                        <img src="14.jpg">
+                        <div class="layer">
+                            <h3>KATHMANDU</h3>
+                        </div>
+                    </div><div class="college-col">
+                        <img src="1.jpg">
+                        <div class="layer">
+                            <h3>KATHMANDU</h3>
+                        </div>
+                    </div><div class="college-col">
+                        <img src="10.jpg">
+                        <div class="layer">
+                            <h3>KATHMANDU</h3>
+                        </div>
+                    </div>
+                  </div>
+        </section>
+        <!----------Facilities--------->
+
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>In order to impart knowledge in the area of information and technology, the College has
+                 established 9 well-equipped laboratories of science, computer, management, journalism, 
+                 and information technology.  The college has more than 169 computers, 10 large TV screens,
+                  and 11 printers to facilitate the teaching-learning and to support the administrative 
+                  activities.To support the security measures, the college classrooms and premises are equipped
+                   with closed-circuit television (CCTV) system.</p>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="20.jpg">
+                    <h3>Library</h3>
+                    <p>The college has an excellent library containing 16000 books, magazines, and journals.
+                         The library has an excellent digital database and high-speed internet connectivity to
+                          facilitate the students and research scholars.</p>
+                </div> <div class="facilities-col">
+                    <img src="19.jpg">
+                    <h3>Computer Lab</h3>
+                    <p>The college has more than 169 computers, 10 large TV screens, and 11 printers to facilitate
+                         the teaching-learning and to support the administrative activities.</p>
+                </div> <div class="facilities-col">
+                    <img src="5.jpg">
+                    <h3>Building and Classrooms</h3>
+                    <p>Madan Bhandari Memorial College owns five buildings on more than 6.5 ropanis of land with
+                         more than 40 well-furnished rooms for conducting the teaching-learning activities.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-------------- Call to actoin ---------->
+        <section class="cta">
+            <h1>Enroll for our various online courses anywhere from the world</h1>
+            <a href="contactus.html" class="h-btn">CONTACT US</a>
+        </section>
+
+
+</section>
+    </body>
+</html>

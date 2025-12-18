@@ -1,0 +1,300 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, iniitial-scale=1.0">
+        <link rel="shortcut icon" href="26.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+    <style>
+        * {
+      margin: 0;
+      padding: 0;
+    }
+    .header{
+        min-height: 100vh;
+        width:100%;
+        background-image:linear-gradient(rgba(7, 13, 35, 0.7),rgba(12, 18, 42, 0.7)), url(18.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+        nav {
+        display:flex;
+        padding: 2% 6%;
+        justify-content:space-between;
+        align-items: center;
+        }
+
+        nav img{
+            width: 170px;
+           text-align: left;
+        }
+
+        .nav-links{
+           flex: 1;
+           text-align: right;
+        } 
+
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding:8px 12px;
+            position: relative;
+        }
+        
+        .nav-links ul li a{
+           color: floralwhite;
+           text-decoration: none;
+           font-size: 12px;
+        }
+
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f2584c;
+            display:block;
+            margin:auto;
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+        .text-box{
+            width: 90%;
+            color: #fff;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .text-box h1{
+            font-size: 62px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2in;
+            margin-top: 100px; 
+        }
+        .text-box p{
+            margin: 10px 0 50px;
+            font-size: 12 px;
+            color: #fff;
+        }
+        .h-btn{
+            display:inline-block;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background:transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .h-btn:hover{
+            border:1px solid #4e6072;
+            background:  #4e6072;
+            transition: 1s;
+        }
+
+        /*-------------- about us page-----------*/
+
+        .sub-header{
+           height:60vh;
+           width: 100%;
+           background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(26.jpg);
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover; 
+           text-align: center;
+           color: #fff;
+           
+        }
+        .sub-header h1{
+            margin-top: 90px;
+            font-size: 48px;
+        }
+        /*----------- facilities----------*/
+        .facilities{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+
+        }
+        .facilities h1{
+            font-size: 40px;
+        }
+        
+        p{
+            color:#5c5757;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+
+        }
+        .row{
+            margin-top: 5%;
+           display: flex;
+            justify-content: space-between;
+        }
+        .facilities-col{
+            flex-basis: 32%;
+            background:rgb(241, 246, 248) ;
+           border-radius: 2px;
+           margin-bottom: 5%;
+            padding:20px 12px;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+        .facilities-col img{
+            width: 100%;
+        }
+
+       h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+        font-size: 50px;
+       }
+      
+       .facilities-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.20);
+
+       }  
+      
+    </style>
+    <body>
+        <section class="sub-header">
+               <nav>
+                <a href="college.html"><img src="12.png"></a>
+                <div class="nav-links">
+                    <ul>
+                    <li><a href="college.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="scholarships.html">SCHOLARSHIPS</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                    </ul>
+                </div>
+               </nav>
+               
+                    <h1>FACILITIES</h1>
+         </section>
+         <!----------Facilities--------->
+         <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>In order to impart knowledge in the area of information and technology, the College has
+                established 9 well-equipped laboratories of science, computer, management, journalism, 
+                and information technology.  The college has more than 169 computers, 10 large TV screens,
+                 and 11 printers to facilitate the teaching-learning and to support the administrative 
+                 activities.To support the security measures, the college classrooms and premises are equipped
+                  with closed-circuit television (CCTV) system.</p>
+         </section>
+
+         <div class="row">
+            <div class="facilities-col">
+                <img src="20.jpg">
+                <h3>Library</h3>
+                <p>
+                    The college has an excellent library containing 16000 books, magazines, and journals.
+                    The library has an excellent digital database and high-speed internet connectivity to
+                     facilitate the students and research scholars.
+                </p>
+            </div><div class="facilities-col">
+                <img src="19.jpg">
+                <h3>Laboratory, Computer, and CCTV</h3>
+                <p>In order to impart knowledge in the area of information and technology, the College has
+                     established 9 well-equipped laboratories of science, computer, management, journalism,
+                      and information technology.  The college has more than 169 computers, 10 large TV screens, 
+                      and 11 printers to facilitate the teaching-learning and to support the administrative 
+                      activities.To support the security measures, the college classrooms and premises are equipped
+                       with closed-circuit television (CCTV) system.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="5.jpg">
+                <h3>Building and Classrooms</h3>
+                <p>Madan Bhandari Memorial College owns five buildings on more than 6.5 ropanis of land with
+                    more than 40 well-furnished rooms for conducting the teaching-learning activities.</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="29.jpg">
+                <h3>Furniture and Accessories</h3>
+                <p>
+                    For the purpose of pedagogical activities, we have well-equipped and well-furnished classrooms.
+                     We have a total of 250 desks and benches, 400 chairs, and 30 cabinets for office purposes. </p>
+            </div><div class="facilities-col">
+                <img src="30.jpg">
+                <h3>Playground</h3>
+                <p>The college has a large playground for different sporting activities; it can also be used for
+                     organizing assemblies and public events.  </p>
+            </div>
+            <div class="facilities-col">
+                <img src="27.jpg">
+                <h3>Sports Facility</h3>
+                <p>We give appropriate emphasis on extra-curricular activities (ECA) such as excursions, education 
+                    tours, and sporting events. Every year, the college organizes sports events for all students with 
+                    a number of different sporting events.</p>
+            </div>
+        </div>
+        </div>
+             
+        <div class="row">
+            <div class="facilities-col">
+                
+                <h3>Power Backup</h3>
+                <p>For ensuring uninterrupted teaching-learning activities, the college has installed two electricity
+                     generators: one 50KVA and another 5 KVA. In addition, the college also has installed large batteries 
+                     with inverters to support the radio transmission and office computer systems</p>
+            </div><div class="facilities-col">
+              
+                <h3>FM Radio Station</h3>
+                <p>The college owns a radio station named Radio Shweta Shardul 93.6 MHz which is being aired from the
+                     college premises.   The radio can be heard in the Kathmandu valley and its vicinity. The radio 
+                     station has its own production studio, control room, and radio tower.The radio station is mainly 
+                     used for disseminating news, views, and entertainment programs. The radio has downlink agreements
+                      with national and international radio stations. National agreements are particularly with community
+                       radio networks; as for international,BBC Nepali Service is broadcast through this radio station. </p>
+            </div>
+            <div class="facilities-col">
+            
+                <h3>Auditorium, Multimedia, and Research Management Cell</h3>
+                <p>The college has a well-furnished auditorium with more than 150 conference seats. The college with the 
+                    grant assistance of the University Grants Commission has established a Research Management Cell to
+                     facilitate research activities. The classrooms are also equipped with modern teaching aids. There
+                      are 15 multimedia projectors for such purposes.</p>
+            </div>
+        </div>
+        </div>
+       
+           
+        <div class="row">
+            <div class="facilities-col">
+              
+                <h3>Drinking-Water</h3>
+                <p>We provide clean and jarred drinking water to our students, faculties and staff members.
+                    </p>
+            </div><div class="facilities-col">
+             
+                <h3>Toilet Facilities</h3>
+                <p>The college building is purposefully constructed for teaching-learning activities. Obviously, each of
+                     the stories of college building consists of sufficient and clean toilets, separately for boys and girls.
+                      The constant supply of water to each of the toilets is provided. </p>
+            </div>
+            <div class="facilities-col">
+              
+                <h3>Roads and Transportation Facilities</h3>
+                <p>The college is connected with a metaled road on the Dhobi Khola corridor and public transportation is easily 
+                    accessible. In addition, the college owns a bus for transporting students and a van for office purposes.</p>
+            </div>
+        </div>
+        </div>
+       
+    
+    </body>
+</html>
